@@ -15,29 +15,29 @@
                  text-align: center;
                  margin-top: 25%;
                  margin-left: 40%;}
-   
-                
     </style>
 </head>
 <body>
-    <div class="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
+    <div class="area" onclick="clicar()">
        Interaja...
     </div>
     <br><br>
- 
     <script>
         var a = window.document.querySelector('div.area')
+
+        a.addEventListener('mouseenter', entrar)//addEventListener substitui o on do 
+        a.addEventListener('mouseout',sair)
+        
         function  clicar() {
           a.innerText = 'clicou !'
           a.style.background = 'red'}
        
-        function  entrou() {
-          a.innerText = 'entrou !'}
+        function  entrar() {
+          a.innerText = 'entrar !'}
    
-        function  saiu() {
-          a.innerText = 'saiu !'
+        function  sair() {
+          a.innerText = 'sair !'
           a.style.background = 'green'}
     </script>
-          
 </body>
 </html>
