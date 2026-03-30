@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+    <style>
+        body{background-color: grey;
+             color: yellow;
+             font: normal 25pt Arial;
+             line-height: 80px;}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">NACIONALIDADE</h1>
+    País de nascimento: <input type="text" id="local">
+    <input type="button" value="OK" onclick="nativo()">
+    <div id="nac">Nacionalidade do visitante:</div>
+
+    <script>
+        function nativo() {
+                           var Pi = document.querySelector('input#local')
+                           var Nac  = document.querySelector('div#nac')
+                           var Pais = 'EUA'
+                           
+                           if(Pais = 'Brasil') { Nac.innerHTML = 'Você é estrangeiro'}
+                           if(Pais = 'EUA') {Nac.innerHTML = `${Pais}`} 
+                                                        
+        }
+    </script>
+</body>
+</html>
