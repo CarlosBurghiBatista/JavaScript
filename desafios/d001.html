@@ -19,12 +19,12 @@
 
     <script>
         function nativo() {
-                           var Pi = document.querySelector('input#local')
+                           var País = document.querySelector('input#local').value;
                            var Nac  = document.querySelector('div#nac')
-                           var Pais = 'EUA'
                            
-                           if(Pais = 'Brasil') { Nac.innerHTML = 'Você é estrangeiro'}
-                           if(Pais = 'EUA') {Nac.innerHTML = `${Pais}`} 
+                           
+                           if(País === 'Brasil') { Nac.innerHTML = 'Você é estrangeiro';}
+                           else {if (País == 'EUA') {Nac.innerHTML = 'Você é Americano';} }
                                                         
         }
     </script>
