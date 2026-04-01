@@ -15,7 +15,9 @@ section{background-color: white;
         margin: auto;
         box-shadow: 5px 5px 5px black;}
 
-div{background-color:rgba(78, 78, 240, 0.463);}        
+div#msg{text-align: center;}        
+
+div#foto{text-align: center;}        
 
 
 
