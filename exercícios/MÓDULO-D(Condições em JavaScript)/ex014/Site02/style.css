@@ -1,5 +1,5 @@
 body{background-color: rgb(70,142,236);
-     font: normal 20pt arial;}
+     font: normal 15pt arial;}
      
 
 
@@ -9,17 +9,15 @@ header{color: white;
 
 
 section{background-color: white;
-        border-radius: 50px;
-        padding: 25px;
+        border-radius: 10px;
+        padding: 15px;
         width: 500px;
         margin: auto;
         box-shadow: 5px 5px 5px black;}
 
-div#msg{text-align: center;
-        padding: 4px;}        
+div#msg{text-align: center;}        
 
-div#foto{text-align: center;
-         padding: 4px;}        
+div#foto{text-align: center;}        
 
 
 
