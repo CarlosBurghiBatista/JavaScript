@@ -1,0 +1,22 @@
+body{background-color: blueviolet;
+     font: normal 30pt arial;
+     color: white;}
+
+header{text-align: center;}
+
+section{background-color: white;
+        width: 500px;
+        margin: auto;
+        border-radius: 15px;}
+
+select{font: normal 20pt arial;
+       border-radius: 5px;
+       padding: 5px;
+       background-color: rgb(189, 151, 225);
+       margin-left: 150px;}        
+
+div{color: black;
+    padding: 15px;}        
+
+footer{text-align: center;
+       padding: 50px;}        
