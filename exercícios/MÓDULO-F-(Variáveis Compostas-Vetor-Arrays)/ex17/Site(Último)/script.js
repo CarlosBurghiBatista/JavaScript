@@ -17,7 +17,7 @@ function na_lista(n, l) {
 function adicionar() {
     if(é_Numero(num.value) && ! na_lista(num.value, valores)) { 
                valores.push(Number(num.value))
-               valores.sort()
+               valores.sort((a, b) => a-b)
                res.innerHTML = `Os valores acumulados são: ${valores}`
                
                let item = document.createElement('option')
@@ -30,12 +30,16 @@ num.value = ''
 num.focus()
 }
 function finalizar() {
-    valores.sort()
+  let cont = 0
+  let tot  = 0
+    valores.sort((a, b) => a-b )
+  while(cont < valores.length) {tot += valores[cont], cont++}  
+
   res.innerHTML = `Ao todo temos ${valores.length} números cadastrados.<br><br>
   O maior valor informado foi ${valores[valores.length-1]}.<br><br>
   O menor valor informado foi ${valores[0]}.<br><br> 
-  Somando todos os valores, temos ${valores}. <br><br>
-  A média dos valores digitados é ${valores}.
+  Somando todos os valores, temos ${tot}. <br><br>
+  A média dos valores digitados é ${tot / 2} .
   `  
 }
 
